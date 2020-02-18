@@ -1,0 +1,124 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Functions", "Functions\Functions.vcxproj", "{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Theif", "Theif\Theif.vcxproj", "{2150D252-AA17-45C2-8981-A6DCF7055CA6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717} = {DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260} = {62E3CCF4-07F3-496E-B77D-48D5AC0E6260}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Harness", "Harness\Harness.vcxproj", "{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717} = {DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{E956CB21-8B8B-4C10-BE6A-C560AAA097B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cloners", "Cloners", "{AAF7506C-D305-4A6F-9761-CB8C2E6782CB}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PyClone", "PyClone\PyClone.pyproj", "{A2775E1E-C389-4DEB-B1C7-E46A210B1748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetClone", "NetClone\NetClone.csproj", "{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Dyn-NetClone|x64 = Dyn-NetClone|x64
+		Dyn-NetClone|x86 = Dyn-NetClone|x86
+		Dyn-PyClone|x64 = Dyn-PyClone|x64
+		Dyn-PyClone|x86 = Dyn-PyClone|x86
+		Dyn-Rebuild|x64 = Dyn-Rebuild|x64
+		Dyn-Rebuild|x86 = Dyn-Rebuild|x86
+		Stc-Forward|x64 = Stc-Forward|x64
+		Stc-Forward|x86 = Stc-Forward|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Dyn-NetClone|x64.ActiveCfg = Debug|x64
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Dyn-NetClone|x64.Build.0 = Debug|x64
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Dyn-NetClone|x86.ActiveCfg = Debug|Win32
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Dyn-NetClone|x86.Build.0 = Debug|Win32
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Dyn-PyClone|x64.ActiveCfg = Debug|x64
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Dyn-PyClone|x64.Build.0 = Debug|x64
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Dyn-PyClone|x86.ActiveCfg = Debug|Win32
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Dyn-PyClone|x86.Build.0 = Debug|Win32
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Dyn-Rebuild|x64.ActiveCfg = Debug|x64
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Dyn-Rebuild|x64.Build.0 = Debug|x64
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Dyn-Rebuild|x86.ActiveCfg = Debug|Win32
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Dyn-Rebuild|x86.Build.0 = Debug|Win32
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Stc-Forward|x64.ActiveCfg = Debug|x64
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Stc-Forward|x64.Build.0 = Debug|x64
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Stc-Forward|x86.ActiveCfg = Debug|Win32
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717}.Stc-Forward|x86.Build.0 = Debug|Win32
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Dyn-NetClone|x64.ActiveCfg = Dyn-NetClone|x64
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Dyn-NetClone|x64.Build.0 = Dyn-NetClone|x64
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Dyn-NetClone|x86.ActiveCfg = Dyn-NetClone|Win32
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Dyn-NetClone|x86.Build.0 = Dyn-NetClone|Win32
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Dyn-PyClone|x64.ActiveCfg = Dyn-PyClone|x64
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Dyn-PyClone|x64.Build.0 = Dyn-PyClone|x64
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Dyn-PyClone|x86.ActiveCfg = Dyn-PyClone|Win32
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Dyn-PyClone|x86.Build.0 = Dyn-PyClone|Win32
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Dyn-Rebuild|x64.ActiveCfg = Dyn-Rebuild|x64
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Dyn-Rebuild|x64.Build.0 = Dyn-Rebuild|x64
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Dyn-Rebuild|x86.ActiveCfg = Dyn-Rebuild|Win32
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Dyn-Rebuild|x86.Build.0 = Dyn-Rebuild|Win32
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Stc-Forward|x64.ActiveCfg = Stc-Forward|x64
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Stc-Forward|x64.Build.0 = Stc-Forward|x64
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Stc-Forward|x86.ActiveCfg = Stc-Forward|Win32
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6}.Stc-Forward|x86.Build.0 = Stc-Forward|Win32
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Dyn-NetClone|x64.ActiveCfg = Debug|x64
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Dyn-NetClone|x64.Build.0 = Debug|x64
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Dyn-NetClone|x86.ActiveCfg = Debug|Win32
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Dyn-NetClone|x86.Build.0 = Debug|Win32
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Dyn-PyClone|x64.ActiveCfg = Debug|x64
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Dyn-PyClone|x64.Build.0 = Debug|x64
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Dyn-PyClone|x86.ActiveCfg = Debug|Win32
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Dyn-PyClone|x86.Build.0 = Debug|Win32
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Dyn-Rebuild|x64.ActiveCfg = Debug|x64
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Dyn-Rebuild|x64.Build.0 = Debug|x64
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Dyn-Rebuild|x86.ActiveCfg = Debug|Win32
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Dyn-Rebuild|x86.Build.0 = Debug|Win32
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Stc-Forward|x64.ActiveCfg = Debug|x64
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Stc-Forward|x64.Build.0 = Debug|x64
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Stc-Forward|x86.ActiveCfg = Debug|Win32
+		{95BC2C38-1FBE-4AF1-967E-BC133250C4D4}.Stc-Forward|x86.Build.0 = Debug|Win32
+		{A2775E1E-C389-4DEB-B1C7-E46A210B1748}.Dyn-NetClone|x64.ActiveCfg = Debug|Any CPU
+		{A2775E1E-C389-4DEB-B1C7-E46A210B1748}.Dyn-NetClone|x86.ActiveCfg = Debug|Any CPU
+		{A2775E1E-C389-4DEB-B1C7-E46A210B1748}.Dyn-PyClone|x64.ActiveCfg = Debug|Any CPU
+		{A2775E1E-C389-4DEB-B1C7-E46A210B1748}.Dyn-PyClone|x86.ActiveCfg = Debug|Any CPU
+		{A2775E1E-C389-4DEB-B1C7-E46A210B1748}.Dyn-Rebuild|x64.ActiveCfg = Debug|Any CPU
+		{A2775E1E-C389-4DEB-B1C7-E46A210B1748}.Dyn-Rebuild|x86.ActiveCfg = Debug|Any CPU
+		{A2775E1E-C389-4DEB-B1C7-E46A210B1748}.Stc-Forward|x64.ActiveCfg = Debug|Any CPU
+		{A2775E1E-C389-4DEB-B1C7-E46A210B1748}.Stc-Forward|x86.ActiveCfg = Debug|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Dyn-NetClone|x64.ActiveCfg = Debug|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Dyn-NetClone|x64.Build.0 = Debug|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Dyn-NetClone|x86.ActiveCfg = Debug|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Dyn-NetClone|x86.Build.0 = Debug|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Dyn-PyClone|x64.ActiveCfg = Debug|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Dyn-PyClone|x64.Build.0 = Debug|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Dyn-PyClone|x86.ActiveCfg = Debug|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Dyn-PyClone|x86.Build.0 = Debug|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Dyn-Rebuild|x64.ActiveCfg = Debug|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Dyn-Rebuild|x64.Build.0 = Debug|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Dyn-Rebuild|x86.ActiveCfg = Debug|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Dyn-Rebuild|x86.Build.0 = Debug|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Stc-Forward|x64.ActiveCfg = Release|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Stc-Forward|x64.Build.0 = Release|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Stc-Forward|x86.ActiveCfg = Release|Any CPU
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260}.Stc-Forward|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB8A345D-E19C-4C2A-9FDF-16BF4DD03717} = {E956CB21-8B8B-4C10-BE6A-C560AAA097B0}
+		{2150D252-AA17-45C2-8981-A6DCF7055CA6} = {E956CB21-8B8B-4C10-BE6A-C560AAA097B0}
+		{A2775E1E-C389-4DEB-B1C7-E46A210B1748} = {AAF7506C-D305-4A6F-9761-CB8C2E6782CB}
+		{62E3CCF4-07F3-496E-B77D-48D5AC0E6260} = {AAF7506C-D305-4A6F-9761-CB8C2E6782CB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7520776C-808A-4B77-B83A-FD5E08BA5803}
+	EndGlobalSection
+EndGlobal
