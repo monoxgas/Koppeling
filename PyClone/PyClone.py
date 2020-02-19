@@ -78,7 +78,7 @@ def _clone_exports(tgt, ref, ref_path, new_section_name = '.rdata2'):
     
     exp_names = [
         ref_path.encode() + b'.' + e.name 
-        if e.name else ref_path.encode() + b'.#' + e.ordinal
+        if e.name else ref_path.encode() + b'.#' + str(e.ordinal).encode()
         for e in ref.DIRECTORY_ENTRY_EXPORT.symbols
     ]
     exp_names_blob = b'\x00'.join(exp_names) + b'\x00'
@@ -108,17 +108,22 @@ def _clone_exports(tgt, ref, ref_path, new_section_name = '.rdata2'):
             ref.get_dword_at_rva(export_dir.AddressOfNames + 4*i) + delta
         )
 
-    assert export_dir.NumberOfFunctions == len(exp_names)
-
     # Link function addresses to forward names
     forward_offset = ref_export_dir.VirtualAddress + ref_export_dir.Size + delta
+    true_offset = 0
+
     for i in range(export_dir.NumberOfFunctions):
-        forward_name = exp_names[i]
+
+        if not ref.get_dword_at_rva(export_dir.AddressOfFunctions + 4*i):
+            continue # This function is hollow (never used)
+
+        forward_name = exp_names[true_offset]
         ref.set_dword_at_rva(
             export_dir.AddressOfFunctions + 4*i,
             forward_offset
         )
         forward_offset += len(forward_name) + 1 # +1 for null byte
+        true_offset += 1
 
     # Apply RVA delta to directory
     export_dir.AddressOfFunctions += delta
