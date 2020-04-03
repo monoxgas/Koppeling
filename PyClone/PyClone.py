@@ -78,8 +78,8 @@ def _clone_exports(tgt, ref, ref_path, new_section_name = '.rdata2'):
     
     exp_names = [
         ref_path.encode() + b'.' + e.name 
-        if e.name else ref_path.encode() + b'.#' + str(e.ordinal).encode()
-        for e in ref.DIRECTORY_ENTRY_EXPORT.symbols
+        if e.name else ref_path.encode() + b'.#' + e.ordinal
+        for e in sorted(ref.DIRECTORY_ENTRY_EXPORT.symbols, key=lambda x: x.ordinal)
     ]
     exp_names_blob = b'\x00'.join(exp_names) + b'\x00'
 
