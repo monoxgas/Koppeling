@@ -17,7 +17,7 @@ int main() {
 	HMODULE module = LoadLibrary(L"Theif.dll");
 	if (!module) return 1;
 
-	DynExport Dynamic = (DynExport)GetProcAddress(module, "Mucklow");
+	DynExport Dynamic = (DynExport)GetProcAddress(module, "Dynamic");
 	if (!Dynamic) return 1;
 
 	if (Dynamic()) {

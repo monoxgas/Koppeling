@@ -83,6 +83,9 @@ namespace NetClone
         }
         static void CloneExports(ref PeFile target, PeFile reference, string referencePath, string sectionName)
         {
+            // Forwards don't typically supply an extension
+            referencePath = referencePath.Replace(".dll", "");
+
             IMAGE_DATA_DIRECTORY tgtExportDirectory = target.ImageNtHeaders.OptionalHeader.DataDirectory[0];
             IMAGE_DATA_DIRECTORY refExportDirectory = reference.ImageNtHeaders.OptionalHeader.DataDirectory[0];
 

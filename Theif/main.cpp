@@ -9,8 +9,8 @@ BOOL RebuildExportTable(PBYTE ourBase, PBYTE targetBase);
 
 #ifdef _FORWARD
 
-#pragma comment(linker,"/export:Static=Functions.dll.Static")
-#pragma comment(linker,"/export:Dynamic=Functions.dll.Dynamic")
+#pragma comment(linker,"/export:Static=Functions.Static")
+#pragma comment(linker,"/export:Dynamic=Functions.Dynamic")
 
 #else
 

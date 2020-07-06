@@ -67,6 +67,9 @@ def add_section(pe, name, size, characteristics = DEFAULT_CHARACTERISTICS):
 
 def _clone_exports(tgt, ref, ref_path, new_section_name = '.rdata2'):
 
+    # Forwards don't typically supply the extension
+    ref_path = ref_path.replace('.dll', '')
+
     ref = copy.deepcopy(ref)
     tgt = copy.deepcopy(tgt)
 
